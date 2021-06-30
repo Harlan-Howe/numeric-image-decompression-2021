@@ -132,7 +132,7 @@ This is how you get out of a <code>while(true) </code>loop, which would otherwis
 
 
 
-*   Click on this link:  [https://classroom.github.com/a/jBJZoI-D](https://classroom.github.com/a/jBJZoI-D) to take you to a page inviting you to the github classroom assignment. You will likely need to log in with your github account.
+*   Click on this link:  https://classroom.github.com/a/EDQrm9Nr to take you to a page inviting you to the github classroom assignment. You will likely need to log in with your github account.
 *   If this is your first time doing one of these assignments, you should see a list of names - please pick your own.
 *   There should be a button prompting you to "accept" this assignment.[^2]
 
