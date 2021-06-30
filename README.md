@@ -92,10 +92,9 @@ Done.
 ```
 
 
-… In this case, I am using a period for the "light" cells and an "M" for the dark ones. ("M" just has a lot of dark pixels. Other candidates might be "W," "#" or "@.") You can use whatever you like. And, yes, a space makes better sense for the light cells… when you're done debugging.
+… In this case, I am using a period for the "light" cells and an "M" for the dark ones. ("M" just has a lot of dark pixels. Other candidates might be "W," "#" or "@.") You can use whatever you like. And, yes, a space makes better sense for the light cells… when you're done debugging.[^1]
 
 Here are some relevant Java tips:
-
 
 <table>
   <tr>
@@ -135,8 +134,7 @@ This is how you get out of a <code>while(true) </code>loop, which would otherwis
 
 *   Click on this link:  [https://classroom.github.com/a/jBJZoI-D](https://classroom.github.com/a/jBJZoI-D) to take you to a page inviting you to the github classroom assignment. You will likely need to log in with your github account.
 *   If this is your first time doing one of these assignments, you should see a list of names - please pick your own.
-*   There should be a button prompting you to "accept" this assignment.[^1]
-
+*   There should be a button prompting you to "accept" this assignment.[^2]
 
 *   After a brief pause, you'll get a message saying you're ready to go, with a url on it. Go ahead and click on this URL.
 *   You should see something similar to this. (This is for a different assignment for a different class for a different student, but the overall appearance should be similar.) <br /><img src="images/image2.png" width = 750>
@@ -149,7 +147,7 @@ This is how you get out of a <code>while(true) </code>loop, which would otherwis
 
 I would like to draw your attention to the top of the main() method - I've created some variables that I would like to recommend to you, because I think you will find them useful. 
 
-In addition to what we have seen, let us make our program a bit more forgiving: 
+In addition to what we have seen, let us make our program a bit more forgiving:[^3] 
 
 
 
@@ -161,8 +159,6 @@ In addition to what we have seen, let us make our program a bit more forgiving:
 
 A few things to check for yourself, in addition to (a - c), above:
 
-
-
 *   The program should work just as well if you end a row with an exact count as with an overflow, like in (a).
 *   Starting a row with 0 should work as expected.
 *   Ending a row with a light cell or a dark cell should not impact the appearance of the next row.
@@ -170,11 +166,30 @@ A few things to check for yourself, in addition to (a - c), above:
 
 **Turning this project in**
 
-We will discuss in class what you need to do to turn this in via Github Classroom, but I also am asking you to add something to this document In the table below, share a picture with me: give me width and height on one line, and on the next, the numbers that make the picture.
+We will discuss in class what you need to do to turn this in via Github Classroom and Canvas, but I also am asking you to add something to this document In the table below, share a picture with me: give me width and height on one line, and on the next, the numbers that make the picture.
 
 *(Make these changes in the Google Document.)*
+
+**Optional Extension**
+Create another class in this project that does the opposite. (This would have a different "public static void main().") It takes a width and height, followed by several strings (e.g., "..M.M..") and turns them into the numbers for this drawing. Ideally, you could provide this program with an image, it would provide you with a stream of numbers, you could copy those numbers into the original program, and you'd get the same picture back again.
+
+For this, you'll need to use the "substring()" command for strings. For example, if we have a string called "row," then
+`String s = row.substring(4,5);`
+would give you a single-character string, corresponding to the location 4 in the "row" String. (The substring method takes two parameters, a start and one past the end of the string you will get back. The number of characters you get back will be the difference between the two parameters, so in this case you are getting 5 - 4 = 1 character, starting at location 4. Remember all strings start counting at zero.)
+So, 
+
+`String name = "Harlan";
+
+System.out.println(name.substring(2,3));`
+
+would print "r".
+
 
 <!-- Footnotes themselves at the bottom. -->
 ## Notes
 
-[^1]: Sounds like something out of _Mission Impossible,_ doesn't it?
+[^1]: Was I just hinting that something other than a space might make debugging easier? Why, yes, I was.
+
+[^2]: Sounds like something out of _Mission Impossible,_ doesn't it?
+
+[^3]: Of course, it's forgiving for the *user*, but you have to make sure this works.
